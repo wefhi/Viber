@@ -14,4 +14,4 @@ class Item(models.Model):
         return reverse('music:itemdetail', kwargs={'pk': self.pk})
 
     def __str__(self):
-        return self.name + " - " + self.price
+        return self.nazwa + " - " + self.cena
