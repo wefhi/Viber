@@ -2,20 +2,20 @@
 
 {% block item %}
 
-	<div class="container">
-
+<div class="container">
+	<div class="card-columns">
 	{% for item in object_list %}
 
 		<div class="card">
-			<div class="card-header"><a href="{% url 'music:itemdetail' item.id %}">{{ item.name }} - {{ item.price }}</a></div>
-
-			<div class="card-body"></div>
-
-
+			<div class="card-header"><a href="{% url 'music:itemdetail' item.id %}">{{ item.nazwa }} - {{ item.cena }}</a></div>
+			<div class="card-body">
+				<img class="img-fluid" src="{{ item.zdjecie.url }}" >
+			</div>
 		</div>
 
 	{% endfor %}
-
 	</div>
+</div>
+
 
 {% endblock %}

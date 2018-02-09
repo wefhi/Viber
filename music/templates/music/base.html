@@ -9,15 +9,13 @@
 	<style>
 body
 {
-background-color: #eeeeee;
-height:2000px;
+background-color: #F5F5F5;
 }
 
 a
 {
-color: black;
+font-size: 0.8em;
 }
-
 	</style>
 
 </head>
@@ -26,7 +24,7 @@ color: black;
 
 
 
-<nav class="navbar navbar-expand-sm navbar-light bg-faded">
+<nav class="navbar navbar-expand-sm navbar-dark bg-faded" style="background-color: #424242; color: white;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,13 +51,82 @@ color: black;
 
 <div class="container-fluid">
 
+    <div class="row">
 
-{% block item %}
-{% endblock %}
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8" style="background-color: white; padding: 1em; margin-top: 2em; margin-bottom: 2em;">
+        {% block item %}
+        {% endblock %}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="col-sm-2"></div>
+
+    </div>
 
 </div>
+
+
+<!--Footer-->
+<footer class="page-footer blue center-on-small-only" style="background-color: #424242; color: white; padding: 1em;">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6" style="font-size:10px;">
+                <h6 class="title">Narzędzia Zyskowscy - wypożyczalnia</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut eros sed lorem fringilla sagittis. In eu mauris id ante pulvinar ultricies. Maecenas viverra sapien purus, sit amet dictum velit ultrices quis. Phasellus dignissim aliquam porta. Curabitur pellentesque euismod leo, sit amet lacinia erat tristique eu. Aenean in lectus fringilla, commodo quam vitae, semper est. Mauris ornare purus in fermentum lacinia. Sed quis turpis in diam tristique dapibus vel at est. Sed blandit placerat nibh, ut eleifend urna. Etiam imperdiet dui viverra dolor malesuada, non finibus urna porta. Aliquam vel tellus nisl. Fusce gravida finibus fringilla. Nam ac diam ac urna fringilla tristique. Phasellus elementum bibendum ullamcorper.</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <h5 class="title">Kontakt</h5>
+                <ul class="list-unstyled">
+                    <li>tel: 739 292 415</li>
+                    <li>Grajewo, Konopnickiej 12c</li>
+                    <li>Od poniedziałku do piątku 8:00 - 15:00</li>
+                    <li>Zapraszamy!</li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid" style="font-size: 0.8em;">
+            © 2018 Copyright: ZyskowscyNarzedzia
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
 
 </body>
 </html>

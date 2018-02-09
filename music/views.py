@@ -1,10 +1,5 @@
 from django.views import generic
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from django.views.generic import View
-from django.urls import reverse_lazy
-
+from django.views.generic.edit import CreateView
 #tutaj sam kombinuje
 
 from .models import Item
@@ -24,5 +19,4 @@ class ItemDetailView(DetailView):
 
 class ItemCreate(CreateView):
     model = Item
-    fields = ['name', 'price']
-
+    fields = ['nazwa', 'cena', 'zdjecie']
