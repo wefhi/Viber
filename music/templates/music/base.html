@@ -19,7 +19,7 @@ color: black;
 }
 
 	</style>
-	
+
 </head>
 <body>
 
@@ -40,7 +40,15 @@ color: black;
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'music:album-add' %}">Dodaj zdjęcie</a>
             </li>
-            
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'music:item-view' %}">Przegladaj przedmioty</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'music:item-add' %}">Dodaj przedmiot</a>
+            </li>
+
         </ul>
     </div>
 </nav>
@@ -53,6 +61,9 @@ color: black;
 
 
 {% block body %}
+{% endblock %}
+
+{% block item %}
 {% endblock %}
 
 
