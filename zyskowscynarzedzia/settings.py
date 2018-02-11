@@ -128,8 +128,8 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-EMAIL_HOST = 'serwer1798750.home.pl'
-EMAIL_HOST_USER = 'adrian+adrianzyskowski_pl.serwer1798750'
-EMAIL_HOST_PASSWORD = '0219adrian'
-EMAIL_PORT = 25
-EMAIL_USE_TLS = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'zyskow.ad@gmail.com'
+EMAIL_HOST_PASSWORD = '7753665054ad'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
