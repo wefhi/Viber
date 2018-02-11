@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.sites',
     'music.apps.MusicConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -126,3 +127,9 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_HOST = 'serwer1798750.home.pl'
+EMAIL_HOST_USER = 'adrian+adrianzyskowski_pl.serwer1798750'
+EMAIL_HOST_PASSWORD = '0219adrian'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = False

@@ -18,5 +18,9 @@ urlpatterns = [
 
     # /items/add
     url(r'items/add/$', views.ItemCreate.as_view(), name='item-add'),
+
+
+
+
 ]
 

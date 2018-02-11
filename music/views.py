@@ -1,8 +1,10 @@
 from django.views import generic
 from django.views.generic.edit import CreateView
+from music.models import Item
+from django.core.mail import send_mail
 #tutaj sam kombinuje
 
-from .models import Item
+
 from django.views.generic.detail import DetailView
 
 class ItemView(generic.ListView):
@@ -20,3 +22,6 @@ class ItemDetailView(DetailView):
 class ItemCreate(CreateView):
     model = Item
     fields = ['nazwa', 'cena', 'zdjecie']
+
+
+send_mail('odswiezenie serwera wefhi3', 'O godzinie wyslania tego maila nastopilo odswiezenie serwera', 'adrian@adrianzyskowski.pl', ['zyskow.ad@gmail.com'])
