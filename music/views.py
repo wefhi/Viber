@@ -23,5 +23,3 @@ class ItemCreate(CreateView):
     model = Item
     fields = ['nazwa', 'cena', 'zdjecie']
 
-
-send_mail('odswiezenie serwera wefhi3', 'O godzinie wyslania tego maila nastopilo odswiezenie serwera', 'adrian@adrianzyskowski.pl', ['zyskow.ad@gmail.com'])

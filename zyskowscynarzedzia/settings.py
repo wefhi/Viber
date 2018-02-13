@@ -31,10 +31,11 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.sites',
-    'music.apps.MusicConfig',
+	'django.contrib.sites',
+	'registration',
+	'django.contrib.auth',
     'django.contrib.admin',
-    'django.contrib.auth',
+    'music.apps.MusicConfig',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -127,9 +128,13 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
+# for email
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'zyskow.ad@gmail.com'
-EMAIL_HOST_PASSWORD = '7753665054ad'
+EMAIL_HOST_PASSWORD = 'ycdzaetdaojqdqir'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+# for registration redux
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
+SITE_ID = 1
