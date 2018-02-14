@@ -31,17 +31,18 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'music',
 	'django.contrib.sites',
 	'registration',
 	'django.contrib.auth',
     'django.contrib.admin',
-    'music.apps.MusicConfig',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
     'companies.apps.CompaniesConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -128,6 +129,8 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
 # for email
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'zyskow.ad@gmail.com'

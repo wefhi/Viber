@@ -4,21 +4,27 @@
 
 
 {% block content %}
-<div class='row'>
-<div class='col-sm-6 col-sm-offset-3'>
-<h1>Register for free!</h1>
+<div class='row text-center'>
+  <div class="col-sm-3"></div>
+<div class='col-sm-6'>
+<h1>Zarejestruj sie</h1>
 <form method="post" action=".">
+
+  <div class="card text-left">
+    <div class="card-body">
   {% csrf_token %}
   {{ form|crispy }}
-
-  <input class='btn btn-block btn-primary' type="submit" value="{% trans 'Join' %}" />
+  </div>
+  </div>
+  <input class='btn btn-block btn-primary' type="submit" value="{% trans 'Rejestruj' %}" />
 </form>
 </div>
+   <div class="col-sm-3"></div>
 </div>
 
 <hr/>
 <div class='row'>
-<div class='col-sm-6 col-sm-offset-3 text-align-center'>
+<div class='col-sm-6 text-align-center'>
 <p>Need to <a href="{% url 'auth_login' %}">Login</a>?</p>
 </div>
 </div>
